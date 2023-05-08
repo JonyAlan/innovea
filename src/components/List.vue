@@ -29,7 +29,12 @@ export default {
   data() {
     return {  
       loading: false,
-      fields: ['author', 'title', 'description'],
+      fields: [
+        { key: 'author', label: 'Autor' },
+        { key: 'title', label: 'Título' },
+        { key: 'description', label: 'Descrição' },
+         
+      ], 
       items: [],
       message: '' 
     }
