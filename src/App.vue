@@ -1,18 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" class="logo"> 
+    <ListData msg="Teste de homologação solicitado dia 04/05/2023"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ListData from './components/List.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    ListData
+  },
+  data() {
+    return {  
+      email: '' 
+    }
+  },
 }
 </script>
 
@@ -24,5 +29,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.logo {
+  width: 30rem;
 }
 </style>
